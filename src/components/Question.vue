@@ -57,13 +57,13 @@ onBeforeUnmount(() => {
 <template>
     <div class="header">
         <RouterLink to="/">
-            <img src="../components/logo.png" class="logo" alt="GeoQuiz logo"/>
+        <img src="../components/logo.png" class="logo" alt="GeoQuiz logo"/>
         </RouterLink>
-        <div class="timer mb-3" :class="{ 'blinking' : timeLeft <= 10}">
-            <h2 id="timer-display">{{ timeLeft }}</h2>
-        </div>
+            <div class="timer mb-3" :class="{ 'blinking' : timeLeft <= 10}">
+                <h2 id="timer-display">{{ timeLeft }}</h2>
+            </div>
     </div>
-    <audio id="timer-sound" src="/sound/timer.mp3" preload="auto"></audio>
+        <audio id="timer-sound" src="/timer.mp3" preload="auto"></audio>
     <div class="quiz-container text-center">
         <h1>{{ question.text }}</h1>
         <img :src="question.img" class="quiz-image" alt="">
