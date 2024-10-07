@@ -103,7 +103,7 @@ onBeforeUnmount(() => {
 
 img {
     max-width: 100%;
-    height: 420px;
+    height: 40vh;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -119,7 +119,7 @@ img {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3.4em;
     color: white;
     font-weight: 500;
 }
@@ -129,7 +129,7 @@ h1 {
 }
 
 .option-box {
-    height: 80px;
+    height: 8vh;
     background-color: #f8f9fa;
     transition: background-color 0.3s ease;
     padding: 20px;
@@ -187,9 +187,33 @@ h1 {
     100% { background-color: red; }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     h1 {
         font-size: 2em;
+    }
+    .quiz-container {
+        padding: 10px;
+        font-size: 1.5em;
+    }
+    .logo {
+        width: 200px;
+    }
+    .timer {
+        width: 1.8em;
+        height: 1.8em;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.4em;
+    }
+    img {
+        height: 34vh;
+    }
+    .timer {
+        width: 2.5em;
+        height: 2.5em;
     }
     .logo {
         width: 160px;
@@ -201,7 +225,7 @@ h1 {
     .option-box {
         height: 60px;
         padding: 10px;
-        font-size: 14px;
+        font-size: 1.15em;
     }
     .form-check-label {
         font-size: 1rem;
